@@ -1,6 +1,6 @@
+
 .topnav {
   background-color: black;
-  overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%;
@@ -12,7 +12,7 @@
   float: left;
   color: white;
   text-align: center;
-  padding: 25px 40px;
+  padding: 25px 30px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -130,3 +130,38 @@ margin:2px; width:100%; height:300px; box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0
   color: black;
   font-size: 16px;
 }
+
+/* Dropdown Nav */
+.dropdown {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropp {
+  position: relative;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  margin-left:20%;
+  margin-top:60px;
+  background-color: #ddd;
+  font-family: inherit;
+  box-shadow: 0 2px 2px 0 grey, 0 2px 2px 0 grey;
+  z-index: 1;
+}
+.content table {
+  float: none;
+  color: black;
+  margin-left:10px;
+  display: block;
+  text-align: center;
+  width:100%;
+  height:300px;
+  overflow:scroll;
+}
+.dropp:hover .content {display: block;}
